@@ -1,0 +1,14 @@
+{
+  "name": "hello-word",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello word"
+  },
+  "author": "salman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
