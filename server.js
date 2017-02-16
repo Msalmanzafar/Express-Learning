@@ -37,7 +37,7 @@ var studentSchema = new mongoose.Schema({
 
 var studentModel = mongoose.model("students", studentSchema);
 
-app.get("/sub", function (req, res, next) {
+app.get("/get", function (req, res, next) {
     studentModel.find({}, function (err, data) {
         if (!err) {
             console.log(data)
@@ -49,7 +49,7 @@ app.get("/sub", function (req, res, next) {
     })
 
 })
-app.post("/sub",function(req,res,next)
+app.post("/post",function(req,res,next)
 {
     var newAdd = new studentModel({
         name: req.body.name
