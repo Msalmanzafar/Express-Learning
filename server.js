@@ -68,7 +68,7 @@ app.post("/sub",function(req,res,next)
 })
 
 var port = (process.env.PORT || 3000)
-mongoose.connect('mongodb://aayanqazi:xp9999955555@ds151059.mlab.com:51059/hello-world')
+mongoose.connect('mongodb://salman:2926959@ds145369.mlab.com:45369/sky-school');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function () {
