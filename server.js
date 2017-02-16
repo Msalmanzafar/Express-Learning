@@ -66,14 +66,7 @@ app.post("/sub",function(req,res,next)
         }
     });
 })
-app.get("/", function(req, res, next){
-    console.log("request is comming to '/");
-    res.send("hello Word");
-});
-app.get("/home", function(req, res, next){
-    console.log("request home is comming to '/");
-    res.send("this is my home page..");
-});
+
 var port = (process.env.PORT || 3000)
 mongoose.connect('mongodb://aayanqazi:xp9999955555@ds151059.mlab.com:51059/hello-world')
 var db = mongoose.connection;
